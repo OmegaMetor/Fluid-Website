@@ -9,6 +9,13 @@ app.get('/', (req, res)=>{
     res.render('home');
 });
 
+app.get('/contact', (req, res)=>{
+res.render('ContactUs');
+});
+
+app.get('/about', (req, res)=>{
+res.render('AboutUs');
+});
 
 app.get('*', (req, res)=> {
     res.render('404')
